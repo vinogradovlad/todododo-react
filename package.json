@@ -2,6 +2,7 @@
   "name": "todo-hw",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vinogradovlad.github.io/todododo-react",
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
@@ -12,6 +13,8 @@
     "web-vitals": "^3.4.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
